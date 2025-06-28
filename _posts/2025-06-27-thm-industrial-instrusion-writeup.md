@@ -48,7 +48,7 @@ So open ports are 22,80,102,1880,8080,44818.
 
 In the 80 port we see this interface:
 
-![/assets/img/imgs-2025-06-27-thm-industrial-instrusion-writeup/image.png]()
+![lo](/assets/img/imgs-2025-06-27-thm-industrial-instrusion-writeup/image.png)
 
 In 8080 port we have this login system:
 
