@@ -11,15 +11,15 @@ virelia-water.it.com and used it to host some of their infrastructure at
  the time. Use your OSINT skills to find information about the 
 infrastructure they used during their campaign*
 
-Let’s scan for subdomains of [virelia-water.it.com](http://virelia-water.it.com/).
+Let’s scan for subdomains of [virelia-water.it.com](https://virelia-water.it.com/).
 
-subfinder -d [virelia-water.it.com](http://virelia-water.it.com/) -silent
+subfinder -d [virelia-water.it.com](https://virelia-water.it.com/) -silent
 
 We find the subdomains:
 
-[stage0.virelia-water.it.com](http://stage0.virelia-water.it.com/)
+[stage0.virelia-water.it.com](https://stage0.virelia-water.it.com/)
 
-[54484d7b5375357373737d.virelia-water.it.com](http://54484d7b5375357373737d.virelia-water.it.com/)
+[54484d7b5375357373737d.virelia-water.it.com](https://54484d7b5375357373737d.virelia-water.it.com/)
 
 The first one actually points to a web page.
 
@@ -33,7 +33,7 @@ The second one doesn’t, and the 54484d7b5375357373737d part is a hex string wh
 
 *Great work on uncovering that suspicious subdomain, Hexline. However, your work here isn’t done yet, we believe there is more.*
 
-In the first subdomain [stage0.virelia-water.it.com](http://stage0.virelia-water.it.com/) we can see a website:
+In the first subdomain [stage0.virelia-water.it.com](https://stage0.virelia-water.it.com/) we can see a website:
 
 ![image.png](/assets/img/imgs-2025-06-30-thm-industrial-intrusion-osint/image.png)
 
@@ -69,7 +69,7 @@ TXT records are a type of DNS record that can store arbitrary text data. They're
 
 *After the initial breach, a single OT-Alert appeared in Virelia’s monthly digest—an otherwise unremarkable maintenance notice, mysteriously signed with PGP. Corporate auditors quietly removed the report days later, fearing it might be malicious. Your mission is to uncover more information about this mysterious signed PGP maintenance message.*
 
-So in [http://virelia-water.it.com](http://virelia-water.it.com/) we can see:
+So in [https://virelia-water.it.com](https://virelia-water.it.com/) we can see:
 
 ![image.png](/assets/img/imgs-2025-06-30-thm-industrial-intrusion-osint/image%202.png)
 
@@ -85,11 +85,11 @@ Digging, however:
 
 CNAME is a type of DNS record that maps one domain name (an alias) to another.
 
-In this case, the CNAME record for [virelia-water.it.com](http://virelia-water.it.com) points to [virelia-water.github.io](http://virelia-water.github.io), indicating that the website content is actually hosted on GitHub Pages.
+In this case, the CNAME record for [virelia-water.it.com](https://virelia-water.it.com) points to [virelia-water.github.io](https://virelia-water.github.io), indicating that the website content is actually hosted on GitHub Pages.
 
 This is significant for our investigation because it reveals that the company's web presence is connected to a GitHub account, potentially giving us access to more information through that platform.
 
-If a website is hosted at [virelia-water.github.io](http://virelia-water.github.io), it typically indicates that the GitHub user "virelia-water" is the owner of that repository. GitHub Pages allows users to host websites directly from their GitHub repositories, and the URL pattern is usually [username].github.io.
+If a website is hosted at [virelia-water.github.io](https://virelia-water.github.io), it typically indicates that the GitHub user "virelia-water" is the owner of that repository. GitHub Pages allows users to host websites directly from their GitHub repositories, and the URL pattern is usually [username].github.io.
 
 And there is a user with that name! Joined 5 days ago!
 
