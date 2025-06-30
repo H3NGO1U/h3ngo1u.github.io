@@ -67,3 +67,5 @@ In the ui endpoint we can see:
 By turning them off we bypass the gate and get the flag 🎊
 
 ![Flagy](/assets/img/imgs-2025-06-27-thm-industrial-instrusion-writeup/image%204.png)
+
+
