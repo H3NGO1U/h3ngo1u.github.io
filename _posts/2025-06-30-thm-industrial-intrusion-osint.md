@@ -1,3 +1,7 @@
+---
+layout: post
+title:  "Try Hack Me - Industrial Intrusion Osint Write-Up"
+---
 # THM Industrial Intrusion
 
 ## OSINT WriteUp

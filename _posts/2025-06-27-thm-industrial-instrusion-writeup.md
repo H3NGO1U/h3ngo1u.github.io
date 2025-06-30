@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Try Hack Me - Industrial Intrusion Competition Write-Up"
+title:  "Try Hack Me - Industrial Intrusion Engagement Challenge Write-Up"
 ---
 # THM Industrial Intrusion WriteUp
 
